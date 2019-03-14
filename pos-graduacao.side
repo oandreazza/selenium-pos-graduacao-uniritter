@@ -1,0 +1,174 @@
+{
+  "id": "d2c4674e-88f0-4109-9e36-397d17b22add",
+  "version": "2.0",
+  "name": "pos-graduacao",
+  "url": "http://automationpractice.com/",
+  "tests": [{
+    "id": "b79b689f-4734-4ee0-8c1f-2455b272220b",
+    "name": "deveInformarErroAoInformarUsuarioSenhaInvalido",
+    "commands": [{
+      "id": "08e34eb3-3d36-454f-b941-6d04323383f0",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "/"
+    }, {
+      "id": "85c07f61-d771-468e-a1d5-576ec46b960f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa744e2a-79cb-4d17-9106-9c37308baac4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "teste@teste.com"
+    }, {
+      "id": "77124294-42d0-4077-885e-e4c3d93a1cba",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [],
+      "value": "xyz"
+    }, {
+      "id": "331ac9fd-b636-408d-b8cf-4f976b26e054",
+      "comment": "",
+      "command": "click",
+      "target": "id=SubmitLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "730270a9-e876-435f-9bc8-346f1917b21b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ol > li",
+      "targets": [],
+      "value": "Invalid password."
+    }]
+  }, {
+    "id": "8c39aacc-3176-4ccb-af31-34262802ad93",
+    "name": "deveInformarSenhaAoTentarAcessarAreaAdminstrativa",
+    "commands": [{
+      "id": "48cf92c3-5b83-48b3-9eb3-95bb4f3a8862",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "/"
+    }, {
+      "id": "80d11be5-b5f4-4a55-8e50-0c1135f30ea0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72fde41f-ef9e-4c7e-b89c-83e66e1adac2",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "teste@teste.com"
+    }, {
+      "id": "ed5aa0b2-a5fe-42a6-adc6-494a2c67f66e",
+      "comment": "",
+      "command": "click",
+      "target": "id=SubmitLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e94aa9b-c8ec-4c1c-a55d-c07d388e8b63",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ol > li",
+      "targets": [],
+      "value": "Password is required."
+    }]
+  }, {
+    "id": "899e8489-7620-4d40-9309-64e43a60da01",
+    "name": "deveInformarUsarioSenhaAreaAdminstrativa",
+    "commands": [{
+      "id": "68f3da3e-abcf-40c1-abab-d664d8db1c2b",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "/"
+    }, {
+      "id": "4f1c19bc-bfcf-4934-9716-4a99f56cbd71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4530dfe2-a9dd-4af6-98dd-b2a0504b6f4c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=passwd",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab4d5327-74d9-4cbe-aa91-03a284b2abe8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "411b67ad-f571-48d1-a071-7175feb6cb22",
+    "name": "deveInformarUsuarioAreaAdminstrativa",
+    "commands": [{
+      "id": "46dcec8e-a4d0-4fd5-9d3a-806992d2812c",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "/"
+    }, {
+      "id": "a6c7cd38-1142-41b8-8c58-b9c610ea9fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7925b286-3fbb-4ca7-a735-dc5de0c99633",
+      "comment": "",
+      "command": "click",
+      "target": "id=SubmitLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46928b81-f4b4-4ec1-a79d-5ff8130db4e6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=ol > li",
+      "targets": [],
+      "value": "An email address required."
+    }]
+  }],
+  "suites": [{
+    "id": "06ba6246-64f0-4caa-9101-09b5083ee61d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
